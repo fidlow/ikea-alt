@@ -5,6 +5,7 @@ import { resolve } from 'path';
  * @type { import('vite').UserConfig }
  */
 const config  = {
+  base: '',
   plugins: [preact()],
   esbuild: {
     logOverride: { 'this-is-undefined-in-esm': 'silent' }
