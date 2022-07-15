@@ -10,6 +10,9 @@ const config  = {
     logOverride: { 'this-is-undefined-in-esm': 'silent' }
   },
   alias: [{ find: '@', replacement: resolve('src') }],
+  build: {
+    outDir: 'docs'
+  }
 }
 
 export default config
